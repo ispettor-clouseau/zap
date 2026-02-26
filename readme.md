@@ -17,12 +17,12 @@ La soluzione definitiva consiste nel rimuovere la versione Snap e installare la 
 sudo snap remove firefox
 ```
 
-**2. Aggiungi il repository (PPA) ufficiale di Mozilla:
+**2. Aggiungi il repository (PPA) ufficiale di Mozilla:**
 
 ```bash
 sudo add-apt-repository ppa:mozillateam/ppa
 ```
-**3. Modifica la priorità dei pacchetti (Apt Pinning):
+**3. Modifica la priorità dei pacchetti (Apt Pinning):**
 
 
 ```bash
@@ -37,7 +37,7 @@ Pin-Priority: -1
 ' | sudo tee /etc/apt/preferences.d/mozilla-firefox
 ```
 
-**4. Aggiorna i repository e installa Firefox:
+**4. Aggiorna i repository e installa Firefox:**
 ```bash
 sudo apt update
 sudo apt install firefox
